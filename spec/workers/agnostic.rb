@@ -5,7 +5,7 @@ class Treat::Specs::Workers::Agnostic
   describe Treat::Workers::Extractors::Language do
     before do
       @entities = ["Obama and Sarkozy will meet in Berlin."]
-      @languages = ["english"]
+      @languages = [:english]
     end
     context "when called on any textual entity" do
       it "returns the language of the entity" do

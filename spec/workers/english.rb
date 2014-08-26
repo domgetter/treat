@@ -99,7 +99,7 @@ class Treat::Specs::Workers::English
       it "annotates each token in the group with its tag and returns the tag 'G'" do
         @@workers.lexicalizers.taggers.each do |tagger|
           @groups.map { |txt| group(txt).tag(tagger) }
-          .all? { |tag| tag == 'G' }.should be_true
+          .all? { |tag| tag == 'G' }.should eq true
           @groups.map { |txt| group(txt).tokenize }
           .map { |g| g.tokens.map(&:tag) }
           .should eql @group_tags
