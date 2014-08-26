@@ -2,7 +2,7 @@ require 'yomu'
 
 class Yomu
   def self.java
-    ENV['JAVA_HOME'] ? File.join(File.expand_path(ENV['JAVA_HOME']),'bin','java') : 'java'
+    ENV['JAVA_HOME'] ? File.join(File.expand_path(ENV['JAVA_HOME']),'bin','java.exe') : 'java'
   end
 end
 # This class is a wrapper for Yomu.
