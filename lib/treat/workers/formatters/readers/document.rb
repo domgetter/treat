@@ -1,5 +1,10 @@
 require 'yomu'
 
+class Yomu
+  def self.java
+    ENV['JAVA_HOME'] ? File.join(File.expand_path(ENV['JAVA_HOME']),'bin','java') : 'java'
+  end
+end
 # This class is a wrapper for Yomu.
 # Yomu is a library for extracting text and metadata from files and documents
 # using the Apache Tika content analysis toolkit.
