@@ -6,8 +6,6 @@ gem 'birch'
 gem 'schiphol'
 gem 'yomu'
 gem 'ruby-readability'
-#gem 'stanford-core-nlp'
-gem 'linguistics'
 
 group :test do
   gem 'rspec'
